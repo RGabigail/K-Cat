@@ -196,3 +196,24 @@ h2 {
 .view-order:hover {
     background-color: #388E3C !important;
 }
+
+/* Make all images responsive */
+img {
+  max-width: 100%;   /* Image won’t exceed its container width */
+  height: auto;      /* Maintains aspect ratio */
+  display: block;    /* Removes small gaps under images */
+  margin: 0 auto;    /* Centers images if needed */
+}
+
+/* Optional: Set a consistent container for images */
+.image-container {
+  width: 90%;       /* Adjust container width as needed */
+  max-width: 1200px; /* Prevents images from being too wide on large screens */
+  margin: 0 auto;   /* Center container */
+}
+
+/* Example: Apply container to specific images */
+img.product-image {
+  width: 100%;
+  height: auto;
+}

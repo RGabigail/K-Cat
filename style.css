@@ -115,6 +115,7 @@ h2 {
     width: 100%;
     max-width: 100px;   /* THIS prevents giant images */
     height: auto;
+    display: block;
     border-radius: 6px;
     object-fit: cover;
 }
@@ -180,3 +181,4 @@ h2 {
         max-width: 100px;
     }
 }
+

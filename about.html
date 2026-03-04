@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - K-Cat</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <!-- jQuery & jQuery UI -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/themes/base/jquery-ui.min.css">
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html" class="ui-btn">Home</a>
+  <a href="about.html" class="ui-btn">About Us</a>
+  <a href="contact.html" class="ui-btn">Contact</a>
+</nav>
+
+<main>
+  <div class="content-wrapper">
+    <h1>About Us</h1>
+
+    <div class="product">
+      <img src="images/abigail.png"
+           alt="Store owner portrait"
+           class="about-img">
+
+      <p>
+        Hi! My name is Abigail, and I’m the founder of K-Cat. I created this store out of my passion
+        for stylish and comfortable footwear. After years of experimenting with different styles,
+        I couldn’t find footwear that truly balanced fashion and comfort, so I decided to create
+        a place where both could come together.
+      </p>
+
+      <p>
+        At K-Cat, we focus on carefully selected sandals, flats, and heels that are designed to look
+        great while still feeling comfortable. Our goal is to help customers feel confident and
+        comfortable every day.
+      </p>
+    </div>
+
+    <!-- FAQ Accordion (Extra Widget) -->
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <div id="accordion">
+        <h3>What makes K-Cat shoes different?</h3>
+        <div>
+          <p>
+            Our shoes are carefully selected to balance comfort, durability, and style.
+            We test designs to ensure all-day wearability.
+          </p>
+        </div>
+
+        <h3>Do you offer returns?</h3>
+        <div>
+          <p>
+            Yes! Returns are accepted within 30 days of purchase with proof of receipt.
+          </p>
+        </div>
+
+        <h3>Where do you ship?</h3>
+        <div>
+          <p>
+            We currently ship within the United States and are expanding internationally soon.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- jQuery UI Initialization -->
+<script>
+  $(function () {
+
+    // Button widget
+    $(".ui-btn").button();
+
+    // Accordion widget (extra requirement)
+    $("#accordion").accordion({
+      collapsible: true,
+      heightStyle: "content"
+    });
+
+  });
+</script>
+
+</body>
+</html>

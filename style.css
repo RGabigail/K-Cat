@@ -197,32 +197,48 @@ h2 {
     background-color: #388E3C !important;
 }
 
-/* Make all images responsive */
+/* =========================
+   GLOBAL IMAGE STYLING
+========================= */
 img {
-  max-width: 100%;   /* Image won’t exceed its container width */
-  height: auto;      /* Maintains aspect ratio */
-  display: block;    /* Removes small gaps under images */
-  margin: 0 auto;    /* Centers images if needed */
+    display: block;     /* removes gaps under images */
+    height: auto;       /* keeps proportions correct */
+    max-width: 100%;    /* never exceed container */
+    margin: 0 auto;     /* centers images */
 }
 
-/* Optional: Set a consistent container for images */
-.image-container {
-  width: 90%;       /* Adjust container width as needed */
-  max-width: 1200px; /* Prevents images from being too wide on large screens */
-  margin: 0 auto;   /* Center container */
-}
-
-/* Example: Apply container to specific images */
-img.product-image {
-  width: 100%;
-  height: auto;
-}
+/* =========================
+   PAGE-SPECIFIC IMAGE SIZING
+========================= */
 body.shopping-cart img,
 body.checkout img,
 body.order-details img {
-  max-width: 50%; /* adjust to taste */
-  height: auto;
-  display: block;
-  margin: 0 auto;
+    max-width: 200px;   /* adjust to taste */
+    width: auto;        /* scale proportionally */
+    height: auto;
 }
 
+/* Optional: product images in cards stay smaller */
+.product-images img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* Optional: responsive for smaller screens */
+@media (max-width: 768px) {
+    body.shopping-cart img,
+    body.checkout img,
+    body.order-details img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    body.shopping-cart img,
+    body.checkout img,
+    body.order-details img {
+        max-width: 120px;
+    }
+}

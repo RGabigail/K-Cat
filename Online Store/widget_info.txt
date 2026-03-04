@@ -1,3 +1,0 @@
-Additional jQuery UI Widget Used: Accordion
-HTML Page: about.html
-Component Applied To: Frequently Asked Questions (FAQ) section to display expandable questions and answers

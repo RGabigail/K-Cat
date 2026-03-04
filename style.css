@@ -217,3 +217,12 @@ img.product-image {
   width: 100%;
   height: auto;
 }
+body.shopping-cart img,
+body.checkout img,
+body.order-details img {
+  max-width: 50%; /* adjust to taste */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+

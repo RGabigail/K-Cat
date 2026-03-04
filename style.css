@@ -182,3 +182,17 @@ h2 {
     }
 }
 
+/* Green Important Buttons */
+.submit-order,
+.proceed-checkout,
+.view-order {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border: none;
+}
+
+.submit-order:hover,
+.proceed-checkout:hover,
+.view-order:hover {
+    background-color: #388E3C !important;
+}
